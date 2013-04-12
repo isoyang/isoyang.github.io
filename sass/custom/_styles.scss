@@ -1,2 +1,21 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+
+html {
+  background: #555555 url("/images/inflicted.jpg");
+
+  //background: #555555;
+}
+
+
+html {
+  body > header {
+    background: none;
+  padding: 1.6em 0 1em 0;
+    h2 {
+      margin-top: .5em;
+     // display: none;
+    }
+  }
+}
