@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software | The Silence of the Lambs]]></title>
+  <link href="http://isoyang.github.io/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://isoyang.github.io/"/>
+  <updated>2014-04-25T14:23:03+03:00</updated>
+  <id>http://isoyang.github.io/</id>
+  <author>
+    <name><![CDATA[ISOYANG]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Install and Test OpenCV under Fedora/Ubuntu]]></title>
+    <link href="http://isoyang.github.io/blog/2013/04/12/install-and-test-opencv-under-fedora-slash-ubuntu/"/>
+    <updated>2013-04-12T19:36:00+03:00</updated>
+    <id>http://isoyang.github.io/blog/2013/04/12/install-and-test-opencv-under-fedora-slash-ubuntu</id>
+    <content type="html"><![CDATA[<p>Recently, I attempted to install OpenCV in my laptop for  computer vision course. And I encountered some  problems during the process, but  finally  succeeded!
+Here, I will briefly describe what I have done for the installation.
+Important: make sure that the following packages have been installed</p>
+
+<p><code>
+yum list  packagename  # have a look at installed packages
+</code>
+<!--more-->
+In Fedora 16 ,  the corresponding packages are <code>gtk2, pkgconfig</code> respectively
+Dowload opencv source code (set 2.4.0 for instance) and uncompress it to your prefered directory:</p>
+
+<p><code>
+cd  your directory which will contain the source file
+tar -xvf  OpenCV-2.4.0.tar.bz2
+</code>
+Next, go into the directory of OpenCV and establish a folder named release and enter it:</p>
+
+<p><code>
+cd  ~/OpenCV-2.4.0/
+mkdir release
+cd release
+</code>
+Now we are under the release folder and execute the following commands:</p>
+
+<p><code>
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON ..
+</code>
+This piece of code will produce makefiles for further processes. Then, we will enter codes in the terminal:</p>
+
+<p><code>
+make
+sudo make install
+</code>
+If you have completed above steps,  some configurations should be made for correct use of OpenCV:</p>
+
+<p><code>
+sudo vim  /etc/ld.so.conf.d/opencv.conf
+add /usr/local/lib into the file
+sudo ldconfig
+</code>
+Furthermore, modify the path variable:</p>
+
+<p><code>
+sudo vim /etc/profile
+add following contents
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+export LD_LIBRARY_PATH=/usr/local/lib
+</code></p>
+
+<p>Save the file and quit, and have modifications come into practice now
+or   ` source /etc/profile `
+If these methods can not work,  you can logout and enter the system again.
+The next part is to test whether openCV can function well.</p>
+
+<p><code>
+cd ~/OpenCV-2.4.0/samples/c
+sh  build_all.sh
+./facedetect  lena.jpg
+</code>
+If an image can pop up,  congratulations!  The library can work well!
+<em>Notes</em>:
+I have once got a problem when I try to test OpenCV:</p>
+
+<p><code>OpenCV Error: Unspecified error (The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script) in cvNamedWindow</code></p>
+
+<p>I have the gtk2 installed, but the problem still remains.
+And then I install the latest version of OpenCV source code. The problem have disappeared!!
+OpenCV: old version is 2.3.1, and the current version is 2.4.0.</p>
+
+<p><em>References</em>:</p>
+
+<ul>
+  <li>
+    <p><a href="http://opencv.willowgarage.com/wiki/InstallGuide">http://opencv.willowgarage.com/wiki/InstallGuide</a></p>
+  </li>
+  <li>
+    <p><a href="http://opencv.willowgarage.com/wiki/CompileOpenCVUsingLinux">http://opencv.willowgarage.com/wiki/CompileOpenCVUsingLinux</a></p>
+  </li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

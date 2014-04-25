@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The Silence of the Lambs]]></title>
+  <link href="http://isoyang.github.io/atom.xml" rel="self"/>
+  <link href="http://isoyang.github.io/"/>
+  <updated>2014-04-25T14:23:03+03:00</updated>
+  <id>http://isoyang.github.io/</id>
+  <author>
+    <name><![CDATA[ISOYANG]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test the new system]]></title>
+    <link href="http://isoyang.github.io/blog/2014/04/25/test-the-new-system/"/>
+    <updated>2014-04-25T14:22:00+03:00</updated>
+    <id>http://isoyang.github.io/blog/2014/04/25/test-the-new-system</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[foreigners in China face troubles?]]></title>
+    <link href="http://isoyang.github.io/blog/2013/04/12/foreigners-in-china-face-troubles/"/>
+    <updated>2013-04-12T21:59:00+03:00</updated>
+    <id>http://isoyang.github.io/blog/2013/04/12/foreigners-in-china-face-troubles</id>
+    <content type="html"><![CDATA[<p>In 2012, a storm of anti-foreign sentiments has become furious. As is known, the trigger is that a <a href="http://www.chinasmack.com/2012/videos/british-man-beat-up-for-sexually-assaulting-chinese-girl.html">British tourist</a> attempted to assault sexually a Chinese girl and was beaten by a passer-by.
+This incident has attracted great attention from Chinese society. 
+And A lot of people started to rethink what actually happened to foreigners in China.
+<!--more-->
+Since the Opening and reforming policy has been executed, China has seen a tremendous transformation from a relatively closed nation into a open-minded state with frequent interactions with other countries like UK, US. 
+Many foreigners have flocked into China for business opportunities and travelling intentions.
+As to ordinary people, the world “foreigner” has carried other meanings such as affluent, highly educated, gentle and so on. 
+Foreigners should lead a life of higher quality compared with their own.</p>
+
+<p>However, the facts are not always the way they think in mind. 
+The halo over their heads should be removed. Foreigners are ordinary people in their home country indeed, 
+They can also have negative sentiments, improper behaviours and even be charged.</p>
+
+<p>What Chinese people should be aware of is to treat foreigners decently. 
+Currently, there exits two extreme attitudes within society. 
+One is to feel inferior facing foreigners. In history, China has several wars with other countries, most of which ended up with the failure of China. Furthermore, They are higher and stronger in shape, and most of time they can also dominate the technological developments. It is bloody hard to transcend those countries. The other is being overconfident state with foreigners. In order to erase the humiliation imposed by foreign countries， Chinese people spare no effort to develop the economy and rebuild the status of China in the world. Now they pride themselves in fabulous economic achievements and time-honoured culture. Based on both popular views, Chinese would better stand in the middle and be rational with complicated affairs.
+Two categories of foreigners consist of crowds flooding into China.
+Some pursue business achievement and some come to China for cultural charms. 
+They should give enough respect to what gives them living resources, wealth and pleasure coming from different culture.
+One can live in China with full morality and dignity just like they did in their home country. It is a pity that some of them can no longer be the way they are at their homeland. I have read the news about famous Snooker O’Sullivan smoking in a non-smoking press conference.  Though China is a nation with rules functioning not so very efficiently,  a foreigner can still be what they are.</p>
+
+<p>Now in China, a series of reports, news, comments which are criticizing foreigners are circulating widely, triggering rampant nationalism and populism  over Internet and among society. All level of Chinese figures have weighed in this conflict. And some kind-hearted foreign individuals have expressed their concerns and  discontents about these bias reports：
+<a href="http://chinageeks.org/2012/05/yang-rui-and-reflections-on-participation/">one post</a> from <a href="www.chinageeks.org">China Geek</a>, and <a href="http://www.theatlantic.com/international/archive/2012/05/china-soft-power-watch-the-yang-rui-foreign-bitch-factor/257403/">another</a> is written by <a href="http://www.theatlantic.com/james-fallows/">James Fallows</a> at Atlantic.
+Those words may give us an interval to evaluate our stands over issues related to foreigners.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install and Test OpenCV under Fedora/Ubuntu]]></title>
+    <link href="http://isoyang.github.io/blog/2013/04/12/install-and-test-opencv-under-fedora-slash-ubuntu/"/>
+    <updated>2013-04-12T19:36:00+03:00</updated>
+    <id>http://isoyang.github.io/blog/2013/04/12/install-and-test-opencv-under-fedora-slash-ubuntu</id>
+    <content type="html"><![CDATA[<p>Recently, I attempted to install OpenCV in my laptop for  computer vision course. And I encountered some  problems during the process, but  finally  succeeded!
+Here, I will briefly describe what I have done for the installation.
+Important: make sure that the following packages have been installed</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">yum list  packagename  # have a look at installed packages</span></code></pre></td></tr></table></div></figure></notextile></div>
+<!--more-->
+<p>In Fedora 16 ,  the corresponding packages are <code>gtk2, pkgconfig</code> respectively
+Dowload opencv source code (set 2.4.0 for instance) and uncompress it to your prefered directory:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd  your directory which will contain the source file
+</span><span class="line">tar -xvf  OpenCV-2.4.0.tar.bz2</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>Next, go into the directory of OpenCV and establish a folder named release and enter it:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd  ~/OpenCV-2.4.0/
+</span><span class="line">mkdir release
+</span><span class="line">cd release</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>Now we are under the release folder and execute the following commands:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON ..</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>This piece of code will produce makefiles for further processes. Then, we will enter codes in the terminal:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">make
+</span><span class="line">sudo make install</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>If you have completed above steps,  some configurations should be made for correct use of OpenCV:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">sudo vim  /etc/ld.so.conf.d/opencv.conf
+</span><span class="line">add /usr/local/lib into the file
+</span><span class="line">sudo ldconfig</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>Furthermore, modify the path variable:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">sudo vim /etc/profile
+</span><span class="line">add following contents
+</span><span class="line">export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+</span><span class="line">export LD_LIBRARY_PATH=/usr/local/lib</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Save the file and quit, and have modifications come into practice now
+or   ` source /etc/profile `
+If these methods can not work,  you can logout and enter the system again.
+The next part is to test whether openCV can function well.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd ~/OpenCV-2.4.0/samples/c
+</span><span class="line">sh  build_all.sh
+</span><span class="line">./facedetect  lena.jpg</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>If an image can pop up,  congratulations!  The library can work well!
+<em>Notes</em>:
+I have once got a problem when I try to test OpenCV:</p>
+
+<p><code>OpenCV Error: Unspecified error (The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script) in cvNamedWindow</code></p>
+
+<p>I have the gtk2 installed, but the problem still remains.
+And then I install the latest version of OpenCV source code. The problem have disappeared!!
+OpenCV: old version is 2.3.1, and the current version is 2.4.0.</p>
+
+<p><em>References</em>:</p>
+
+<ul>
+  <li>
+    <p><a href="http://opencv.willowgarage.com/wiki/InstallGuide">http://opencv.willowgarage.com/wiki/InstallGuide</a></p>
+  </li>
+  <li>
+    <p><a href="http://opencv.willowgarage.com/wiki/CompileOpenCVUsingLinux">http://opencv.willowgarage.com/wiki/CompileOpenCVUsingLinux</a></p>
+  </li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>
